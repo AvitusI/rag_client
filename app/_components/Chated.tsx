@@ -21,7 +21,7 @@ export default function Chated() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8000/message', {
+      const response = await fetch('https://udsm-rag.onrender.com/message', {
         method: 'POST',
         headers: { 'Content-Type': 'text/plain' },
         body: text,
